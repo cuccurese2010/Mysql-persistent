@@ -1,0 +1,16 @@
+yum install nfs-utils
+mkdir -p /mnt/data1 /mnt/data2 /mnt/data3
+chmod -R 775 /mnt/data1 /mnt/data2 /mnt/data3
+systemctl enable rpcbind
+systemctl enable nfs-server
+systemctl enable nfs-lock
+systemctl enable nfs-idmap
+systemctl start rpcbind
+systemctl start nfs-server
+systemctl start nfs-lock
+systemctl start nfs-idmap 
+echo  "/mnt/data1     192.168.90.6(rw,sync,no_root_squash,no_all_squash)" >> /etc/exports
+echo  "/mnt/data2     192.168.90.6(rw,sync,no_root_squash,no_all_squash)" >> /etc/exports
+echo  "/mnt/data3     192.168.90.6(rw,sync,no_root_squash,no_all_squash)" >> /etc/exports
+
+systemctl restart nfs-server
