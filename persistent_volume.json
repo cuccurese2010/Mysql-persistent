@@ -6,7 +6,7 @@
  },
  "spec": {
  "capacity": {
-  "storage": "1Gi"
+  "storage": "50Gi"
  },
   "accessModes": [ "ReadWriteOnce" ],
 
@@ -28,7 +28,7 @@
  },
  "spec": {
  "capacity": {
-  "storage": "1Gi"
+  "storage": "50Gi"
  },
   "accessModes": [ "ReadWriteOnce" ],
 
@@ -50,7 +50,7 @@
  },
  "spec": {
  "capacity": {
-  "storage": "1Gi"
+  "storage": "50Gi"
  },
   "accessModes": [ "ReadWriteOnce" ],
 
