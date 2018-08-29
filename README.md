@@ -1,4 +1,4 @@
-# Mysql-persistent Volume for Openshift
+# mysql-persistent Volume for Openshift
 Configure nfs, you can use nfs.txt
 Import persistent volume in your project openshift:
 
